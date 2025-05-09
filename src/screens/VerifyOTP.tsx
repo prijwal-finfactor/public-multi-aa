@@ -46,10 +46,10 @@ const VerifyOTP = () => {
 
         <div className="space-y-6">
           <h2 className="text-xl font-semibold">
-            <FIU Name> uses <Anumati> to safely receive your financial details
+            FIU Name uses Anumati to safely receive your financial details
           </h2>
           <p className="text-sm text-gray-600">
-            Please enter the OTP sent by <Anumati> on <*****6781>
+            Please enter the OTP sent by Anumati on *****6781
           </p>
 
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -117,5 +117,3 @@ const VerifyOTP = () => {
 };
 
 export default VerifyOTP;
-  )
-}
