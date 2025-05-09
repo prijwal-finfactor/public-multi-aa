@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "vite --config vite.config.anumatiAA.ts",
     "dev:anumatiAA": "vite --config vite.config.anumatiAA.ts",
     "build:anumatiAA": "vite build --config vite.config.anumatiAA.ts",
     "dev:finvuAA": "vite --config vite.config.finvuAA.ts",
