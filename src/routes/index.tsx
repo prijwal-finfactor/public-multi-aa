@@ -1,8 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
-import Dashboard from '../screens/Dashboard';
-import ConsentFlow from '../screens/ConsentFlow';
-import AccountLinking from '../screens/AccountLinking';
 import Layout from '../components/Layout';
+import Dashboard from '../screens/Dashboard';
+import SelectAAProvider from '../screens/SelectAAProvider';
+import MobileVerification from '../screens/MobileVerification';
+import VerifyOTP from '../screens/VerifyOTP';
+import SelectFIAccount from '../screens/SelectFIAccount';
+import ConsentDetails from '../screens/ConsentDetails';
+import ConsentConfirmation from '../screens/ConsentConfirmation';
+import AccountAggregator from '../screens/AccountAggregator';
+import Success from '../screens/Success';
 
 export const router = createBrowserRouter([
   {
@@ -14,12 +20,36 @@ export const router = createBrowserRouter([
         element: <Dashboard />,
       },
       {
-        path: '/consent-flow',
-        element: <ConsentFlow />,
+        path: '/select-aa-provider',
+        element: <SelectAAProvider />,
       },
       {
-        path: '/account-linking',
-        element: <AccountLinking />,
+        path: '/mobile-verification',
+        element: <MobileVerification />,
+      },
+      {
+        path: '/verify-otp',
+        element: <VerifyOTP />,
+      },
+      {
+        path: '/select-fi-account',
+        element: <SelectFIAccount />,
+      },
+      {
+        path: '/consent-details',
+        element: <ConsentDetails />,
+      },
+      {
+        path: '/consent-confirmation',
+        element: <ConsentConfirmation />,
+      },
+      {
+        path: '/account-aggregator',
+        element: <AccountAggregator />,
+      },
+      {
+        path: '/success',
+        element: <Success />,
       },
     ],
   },
